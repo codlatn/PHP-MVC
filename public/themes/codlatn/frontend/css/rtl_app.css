@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Changa:wght@200;300;400;500;600;700;800&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap);
+html, body {
+  direction: rtl;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Tajawal";
+  font-size: "2rem";
+  font-weight: 700;
+  text-align: "center";
+  color: red;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: small;
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "/frontend/js/app.js": "/frontend/js/app.js",
+    "/admin/js/app.js": "/admin/js/app.js",
+    "/admin/css/rtl_app.css": "/admin/css/rtl_app.css",
+    "/admin/css/ltr_app.css": "/admin/css/ltr_app.css",
+    "/frontend/css/rtl_app.css": "/frontend/css/rtl_app.css",
+    "/frontend/css/ltr_app.css": "/frontend/css/ltr_app.css"
+}

@@ -1,0 +1,105 @@
+@mixin float($dir) {
+  @if $dir == left {
+    float: $def-float;
+    } @else if $dir == right {
+      float: $opp-float;
+    } @else {
+      float: $dir;
+  
+  }
+}
+
+
+
+
+
+@mixin position-align($unit) {
+  @if $dir == left {
+    left: $unit;
+    } @else if $dir == right {
+      right: $unit;
+    } @else {
+        $dir: $unit;
+  }
+}
+
+@mixin text-align($dir) {
+  @if $dir == left {
+    text-align: $def-float;
+    } @else if $dir == right {
+      text-align: $opp-float;
+    } @else {
+      text-align: $dir;
+  }
+}
+
+
+@mixin margin-align($dir, $px) {
+  @if $dir == left {
+    margin-left: $px;
+    } @else if $dir == right {
+      margin-right: $px;
+    } @else {
+      margin-#{$dir}: $px;
+  }
+}
+
+@mixin padding-align($dir, $px) {
+  @if $dir == left {
+    padding-left: $px;
+    } @else if $dir == right {
+      padding-right: $px;
+    } @else {
+      padding-#{$dir}: $px;
+  }
+}
+
+
+@mixin transition($s, $e) {
+  transition: all #{$s} #{$e};
+  -webkit-transition: all #{$s} #{$e};
+  -moz-transition: all #{$s} #{$e};
+  -o-transition: all #{$s} #{$e};
+}
+
+
+
+$breakpoints: (
+'small':  ( max-width:  767px ),
+'medium': ( max-width:  992px ),
+'large':  ( max-width: 1+200px )
+) !default;
+
+@mixin respond-to($breakpoint) {
+
+@if map-has-key($breakpoints, $breakpoint) {
+
+  @media #{inspect(map-get($breakpoints, $breakpoint))} {
+    @content;
+  }
+}
+
+ @else {
+  @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+      + "Available breakpoints are: #{map-keys($breakpoints)}.";
+}
+}
+
+
+
+@mixin fonts($n, $s, $w,$align,$color ){
+font-family: $n;
+font-size: $s;
+font-weight: $w;
+@if($align == true){
+  text-align: $dir;
+}@else{
+  text-align: $align;
+}
+@if($color != ''){
+  color: $color;
+}
+}
+
+
+
