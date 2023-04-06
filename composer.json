@@ -1,0 +1,16 @@
+{
+    "name": "codlatn/phpmvc",
+    "description": "MVC pattern -  written in PHP 5.5. This project can be used as a Base MVC \"framework\" to start your PHP project",
+    "autoload": {
+        "psr-0": {
+            "Codlatn": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "codlatn",
+            "email": "admin@codlatn.com"
+        }
+    ],
+    "require": {}
+}
