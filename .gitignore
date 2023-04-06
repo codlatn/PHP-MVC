@@ -1,2 +1,5 @@
 cach
 node_modules
+
+composer
+autoload.php
